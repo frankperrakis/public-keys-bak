@@ -36,13 +36,7 @@ bash <(curl -fsSL https://gitlab.com/frankper/public-keys/-/raw/master/install_f
 bash <(curl -fsSL https://gitlab.com/frankper/public-keys/-/raw/master/install_frank.sh) -g
 ```
 ### GPG Keys URLS
-* [yubikey](https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xa59e931a849979fc)
-
-* [gpg card 001](https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x5faddad63d31b26a)
-
-* [gpg card 002](https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x1e81e951285219b0)
-
-* [gpg card 003.v2-v3](https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x1ebbdb2a2fe0dc7d)
+[main](https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x026df53d6b7c0b00732d555cf8e3ef51cf4f4f51)
 # repo tree
 ```shell
 2 directories, 10 files

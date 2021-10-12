@@ -50,7 +50,7 @@ done
 gpg_keys_ubuntu () {
 colorprintf red "Installing All GPG Keys from ubuntu keyservers"
 for ubuntu in ${gpgKeyUbuntu[@]}; do 
-  curl -sSL https://keyserver.ubuntu.com/pks/lookup?op=get&search=${ubuntu[@]} | gpg --import -
+  curl -sSL https://keyserver.ubuntu.com/pks/lookup?op=get&search=${ubuntu} | gpg --import -
 done 
 }
 
@@ -101,7 +101,8 @@ do
       ;;
     --ubuntu | -u)
       check_dependencies
-      gpg_keys_ubuntu
+      output="$(gpg_keys_ubuntu)"
+      echo "$output"
       exit
       ;;
     --help | -h)

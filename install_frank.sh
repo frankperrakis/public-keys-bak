@@ -50,8 +50,7 @@ done
 gpg_keys_ubuntu () {
 colorprintf red "Installing All GPG Keys from ubuntu keyservers"
 for ubuntu in ${gpgKeyUbuntu[@]}; do 
-  comrt="curl -sSL https://keyserver.ubuntu.com/pks/lookup?op=get&search=${ubuntu} | gpg --import -"
-  $comrt
+  curl -sSL https://keyserver.ubuntu.com/pks/lookup?op=get&search=${ubuntu[@]} | gpg --import -
 done 
 }
 

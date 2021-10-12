@@ -101,8 +101,7 @@ do
       ;;
     --ubuntu | -u)
       check_dependencies
-      output="$(gpg_keys_ubuntu)"
-      echo "$output"
+      gpg_keys_ubuntu
       exit
       ;;
     --help | -h)

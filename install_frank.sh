@@ -41,16 +41,17 @@ curl -sSL https://gitlab.com/frankper/public-keys/-/raw/master/authorized_keys >
 }
 
 gpg_keys () {
-colorprintf red "Installing All GPG Keys"
+colorprintf red "Installing All GPG Keys from github"
 for key in ${gpgKeyNames[@]}; do 
   curl -sSL https://gitlab.com/frankper/public-keys/-/raw/master/keyfiles/frank.perrakis.${key}.asc | gpg --import - 
 done 
 }
 
 gpg_keys_ubuntu () {
-colorprintf red "Installing All GPG Keys"
+colorprintf red "Installing All GPG Keys from ubuntu keyservers"
 for ubuntu in ${gpgKeyUbuntu[@]}; do 
-  curl -sSL https://keyserver.ubuntu.com/pks/lookup?op=get&search=${ubuntu} | gpg --import -
+  comrt="curl -sSL https://keyserver.ubuntu.com/pks/lookup?op=get&search=${ubuntu} | gpg --import -"
+  $comrt
 done 
 }
 

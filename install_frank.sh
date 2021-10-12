@@ -76,7 +76,7 @@ declare -a gpgKeyNames=(main)
 # revoked 
 # declare -a gpgKeyNames=(gpg001 gpg002 yubikey gpg003.v2-v3)
 # declare gpg key names from ubuntu servers
-declare -a gpgKeyUbuntu=(0x026df53d6b7c0b00732d555cf8e3ef51cf4f4f51)
+declare -a gpgKeyUbuntu=(0xF8E3EF51CF4F4F51)
 # revoced keys 
 # declare -a gpgKeyUbuntu=(0x1e81e951285219b0 0x5faddad63d31b26a 0x1e81e951285219b0 0x1ebbdb2a2fe0dc7d)
 

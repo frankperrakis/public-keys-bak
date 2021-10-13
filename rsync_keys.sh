@@ -50,7 +50,7 @@ cd $source_folder
 git add . 
 git commit -m "Automated Sync ${current_time}"
 git push 
-colorprintf green "Commited to Gitlab"
+colorprintf green "Commited to Gitlab $source_folder"
 }
 
 SetTime

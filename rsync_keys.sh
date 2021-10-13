@@ -41,7 +41,7 @@ for tar in ${TargetFolderForDeletion[@]}; do
     git add . 
     git commit -m "Automated Sync ${current_time}"
     git push 
-    colorprintf green "Commited to Github"
+    colorprintf green "Commited to $tar"
 done
 }
 

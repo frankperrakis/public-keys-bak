@@ -20,20 +20,20 @@ Make sure **gpg** and **curl** is installed in your system before attempting any
 ## To import all my ssh and gpg keys
 Fetch and run the script 
 ```shell
-bash <(curl -fsSL https://gitlab.com/frankper/public-keys/-/raw/master/install_frank.sh) -a
+bash <(curl -fsSL https://gitlab.com/frankper/public-keys/-/raw/main/install_frank.sh) -a
 ```
 ## To import only my ssh keys
 ```shell
-bash <(curl -fsSL https://gitlab.com/frankper/public-keys/-/raw/master/install_frank.sh) -s 
+bash <(curl -fsSL https://gitlab.com/frankper/public-keys/-/raw/main/install_frank.sh) -s 
 ```
 ## To import only my gpg keys
 ### From Ubuntu GPG keyserver
 ```shell
-bash <(curl -fsSL https://gitlab.com/frankper/public-keys/-/raw/master/install_frank.sh) -u
+bash <(curl -fsSL https://gitlab.com/frankper/public-keys/-/raw/main/install_frank.sh) -u
 ```
 ### From my gitlab repo
 ```shell
-bash <(curl -fsSL https://gitlab.com/frankper/public-keys/-/raw/master/install_frank.sh) -g
+bash <(curl -fsSL https://gitlab.com/frankper/public-keys/-/raw/main/install_frank.sh) -g
 ```
 ### GPG Keys URLS
 [main](https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x026df53d6b7c0b00732d555cf8e3ef51cf4f4f51)
